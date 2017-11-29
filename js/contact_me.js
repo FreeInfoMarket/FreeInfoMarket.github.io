@@ -1,6 +1,6 @@
 $(function() {
 
-  $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
+  $("#contactForm input,#contactForm textarea"){
     preventSubmit: true,
     submitError: function($form, event, errors) {
       // additional error messages or events
