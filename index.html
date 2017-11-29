@@ -439,28 +439,6 @@ Spend 110,000 NX or more and receive:<br />
                   <div class="form-group">
                     <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
                     <p class="help-block text-danger"></p>
-                    
-                    <?php
-                      $name = $_POST['name'];
-                      $email = $_POST['email'];
-                      $phone = $_POST['phone'];
-                      $message = $_POST['message'];
-                      $to = 'phim8340@mylaurier.ca'; 
-                      $subject = 'Free Info Market User Comment';
-
-                      $body = "From: $name\n E-Mail: $email\n Phone: $phone\n Message:\n $message";
-                    ?>
-                    
-                    <?php
-                    if ($_POST['submit']) {
-                        if (mail ($to, $subject, $body, $from)) { 
-                            echo '<p>Your message has been sent!</p>';
-                        } else { 
-                            echo '<p>Something went wrong, go back and try again!</p>'; 
-                        }
-                    }
-                    ?>
-                    
                   </div>
                 </div>
                 <div class="clearfix"></div>
